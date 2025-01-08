@@ -10,7 +10,7 @@ def weather():
         city = request.form['city']
     city = 'Chennai' 
 
-    API_KEY = "48a90ac42caa09f90dcaeee4096b9e53"
+    API_KEY = "your_api_here"
     
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}'
     
