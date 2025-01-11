@@ -8,7 +8,8 @@ app = Flask(__name__)
 def weather():
     if request.method == 'POST':
         city = request.form['city']
-    city = 'Chennai' 
+    else:
+        city = 'Chennai' 
 
     API_KEY = "your_api_here"
     
