@@ -32,7 +32,7 @@ def weather():
     return render_template('index.html', data=data)
 
 def celsius(temp):
-    return str(round(float(temp) - 273.15, 2 ))  
+    return str(round(float(temp) - 273.15,2))  
 
 if __name__ == '__main__':
     app.run()
