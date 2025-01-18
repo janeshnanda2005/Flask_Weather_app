@@ -13,50 +13,7 @@
     
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <style>
-        body {
-            background-color: #e9ecef;
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-        }
-        nav {
-            background: #007bff; /* New banner color */
-            color: white;
-            padding: 20px 0;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-        .input-group {
-            margin-top: 20px;
-        }
-        .btn-primary {
-            background-color: #ff6f61; /* Button color */
-            border: none;
-        }
-        .btn-primary:hover {
-            background-color: #ff4c3b; /* Button hover color */
-        }
-        .result {
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin-top: 20px;
-        }
-        .error {
-            color: #d9534f;
-            font-weight: bold;
-        }
-        footer {
-            margin-top: 20px;
-            padding: 10px 0;
-            background-color: #007bff; /* Footer color matching the banner */
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css') }}">
 </head>
 
 <body>
@@ -98,7 +55,9 @@
         </div>
     </div>
 
+
     <footer>
+        <a href="/DB">Database</a>
         <p>&copy; 2025 Weather App | All Rights Reserved</p>
     </footer>
 

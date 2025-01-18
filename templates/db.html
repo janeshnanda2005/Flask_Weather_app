@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/stylesdb.css') }}">
+</head>
+<body>
+    <h2>Items</h2>  
+    <ul>
+        {%for user in post%}
+        <li>
+            id:{{user.id}}
+            Cityname:{{user.cityname}}
+            MaxTemp:{{user.tempcel}}
+            Coordinates:{{user.coor}}
+            Code:{{user.code}}
+            <div>
+                <form action="{{ url_for('delete', user_id=user.id) }}" method="POST" style="display:inline;">
+                    <button type="submit">Delete</button>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    
+    
+</body>
+</html>
